@@ -44,7 +44,7 @@ img {
   color: var(--snow);
   display: grid;
   gap: 18px;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto;
   left: 0;
   padding: 22px clamp(18px, 4vw, 56px);
   position: fixed;
@@ -82,6 +82,40 @@ img {
 
 .nav a:hover {
   opacity: 1;
+}
+
+.language-switch {
+  border: 1px solid currentColor;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 42px;
+}
+
+.language-switch button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: 800 0.72rem / 1 var(--sans);
+  min-width: 42px;
+  padding: 0 10px;
+}
+
+.language-switch button + button {
+  border-left: 1px solid currentColor;
+}
+
+.language-switch button[aria-pressed="true"] {
+  background: currentColor;
+}
+
+.site-header:not(.is-scrolled) .language-switch button[aria-pressed="true"] {
+  color: var(--charcoal);
+}
+
+.site-header.is-scrolled .language-switch button[aria-pressed="true"] {
+  color: var(--snow);
 }
 
 .icon-link {
@@ -511,7 +545,7 @@ section h2 {
 
 @media (max-width: 920px) {
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
   }
 
   .nav {

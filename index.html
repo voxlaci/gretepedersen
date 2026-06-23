@@ -22,14 +22,18 @@
       <a class="brand" href="#home" aria-label="Grete Pedersen home">
         <span>Grete Pedersen</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#vision">Vision</a>
-        <a href="#biography">Biography</a>
-        <a href="#recordings">Recordings</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" aria-label="Primary navigation" data-i18n-attr="aria-label:navLabel">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#vision" data-i18n="nav.vision">Vision</a>
+        <a href="#biography" data-i18n="nav.biography">Biography</a>
+        <a href="#recordings" data-i18n="nav.recordings">Recordings</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a class="icon-link" href="#contact" aria-label="Professional enquiries">
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="no" aria-pressed="false">NO</button>
+      </div>
+      <a class="icon-link" href="#contact" aria-label="Professional enquiries" data-i18n-attr="aria-label:professionalEnquiries">
         <svg aria-hidden="true" viewBox="0 0 24 24">
           <path d="M4 4h16v16H4z"></path>
           <path d="m4 7 8 6 8-6"></path>
@@ -39,88 +43,88 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/hero-conducting.png" alt="A quiet Nordic concert hall atmosphere with conductor and choir silhouettes">
+        <img class="hero-image" src="assets/hero-conducting.png" alt="A quiet Nordic concert hall atmosphere with conductor and choir silhouettes" data-i18n-attr="alt:heroAlt">
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="kicker">Norwegian conductor · educator · artistic leader</p>
+          <p class="kicker" data-i18n="hero.kicker">Norwegian conductor · educator · artistic leader</p>
           <h1 id="hero-title">Grete Pedersen</h1>
-          <p class="hero-quote">Listening is the beginning of music.</p>
+          <p class="hero-quote" data-i18n="hero.quote">Listening is the beginning of music.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#vision">Artistic Vision</a>
-            <a class="button ghost" href="#contact">Invite Grete</a>
+            <a class="button primary" href="#vision" data-i18n="hero.primary">Artistic Vision</a>
+            <a class="button ghost" href="#contact" data-i18n="hero.secondary">Invite Grete</a>
           </div>
         </div>
       </section>
 
       <section class="intro section-pad" id="about" aria-labelledby="about-title">
-        <div class="section-label">About</div>
+        <div class="section-label" data-i18n="section.about">About</div>
         <div class="intro-grid">
-          <h2 id="about-title">A defining artistic voice in Nordic choral music.</h2>
+          <h2 id="about-title" data-i18n="about.title">A defining artistic voice in Nordic choral music.</h2>
           <div class="intro-copy">
-            <p>
+            <p data-i18n="about.p1">
               Grete Pedersen is one of Norway's most respected conductors, admired internationally for work that combines exacting musical precision with emotional depth.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Her career spans professional choirs, orchestras, contemporary music projects, recordings, education, and guest conducting across Europe.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="marquee" aria-label="Artistic identity">
-        <span>Listening</span>
-        <span>Space</span>
-        <span>Human Voice</span>
-        <span>Nordic Identity</span>
-        <span>Community</span>
-        <span>Precision</span>
+      <section class="marquee" aria-label="Artistic identity" data-i18n-attr="aria-label:artisticIdentity">
+        <span data-i18n="marquee.listening">Listening</span>
+        <span data-i18n="marquee.space">Space</span>
+        <span data-i18n="marquee.voice">Human Voice</span>
+        <span data-i18n="marquee.nordic">Nordic Identity</span>
+        <span data-i18n="marquee.community">Community</span>
+        <span data-i18n="marquee.precision">Precision</span>
       </section>
 
       <section class="vision section-pad" id="vision" aria-labelledby="vision-title">
         <div class="vision-text">
-          <div class="section-label">Artistic Vision</div>
-          <h2 id="vision-title">The choir as a place where people learn to listen together.</h2>
-          <p>
+          <div class="section-label" data-i18n="section.vision">Artistic Vision</div>
+          <h2 id="vision-title" data-i18n="vision.title">The choir as a place where people learn to listen together.</h2>
+          <p data-i18n="vision.p1">
             Pedersen's artistic practice places the human voice at the center of musical and social imagination. Her work explores how sound, silence, and shared breath can create community without reducing complexity.
           </p>
-          <p>
+          <p data-i18n="vision.p2">
             Rooted in Nordic traditions and contemporary expression, her programming makes space for sacred repertoire, commissioned works, experimental vocal language, and the continuing evolution of choral culture.
           </p>
         </div>
         <div class="list-panel">
-          <h3>Core Concepts</h3>
+          <h3 data-i18n="concepts.title">Core Concepts</h3>
           <ul>
-            <li>Listening as leadership</li>
-            <li>Sound shaped by space</li>
-            <li>Contemporary courage</li>
-            <li>Nordic clarity and warmth</li>
-            <li>Community through singing</li>
+            <li data-i18n="concepts.one">Listening as leadership</li>
+            <li data-i18n="concepts.two">Sound shaped by space</li>
+            <li data-i18n="concepts.three">Contemporary courage</li>
+            <li data-i18n="concepts.four">Nordic clarity and warmth</li>
+            <li data-i18n="concepts.five">Community through singing</li>
           </ul>
         </div>
       </section>
 
       <section class="positions section-pad" aria-labelledby="positions-title">
-        <div class="section-label">Major Positions</div>
-        <h2 id="positions-title">Institutions shaped by long artistic attention.</h2>
+        <div class="section-label" data-i18n="section.positions">Major Positions</div>
+        <h2 id="positions-title" data-i18n="positions.title">Institutions shaped by long artistic attention.</h2>
         <div class="position-grid">
           <article>
             <span class="eyebrow">1990-2025</span>
-            <h3>Norwegian Soloists' Choir</h3>
-            <p>
+            <h3 data-i18n="positions.soloists.title">Norwegian Soloists' Choir</h3>
+            <p data-i18n="positions.soloists.body">
               Longtime artistic director and chief conductor of one of Europe's most acclaimed professional chamber choirs, known for Nordic repertoire, contemporary music, innovative programming, touring, and award-winning recordings.
             </p>
           </article>
           <article>
-            <span class="eyebrow">Education</span>
-            <h3>Norwegian Academy of Music</h3>
-            <p>
+            <span class="eyebrow" data-i18n="positions.education.eyebrow">Education</span>
+            <h3 data-i18n="positions.education.title">Norwegian Academy of Music</h3>
+            <p data-i18n="positions.education.body">
               Professor, conducting teacher, and mentor to generations of young conductors, with masterclass work focused on sound, interpretation, leadership, and professional choir development.
             </p>
           </article>
           <article>
-            <span class="eyebrow">International</span>
-            <h3>Guest Conducting</h3>
-            <p>
+            <span class="eyebrow" data-i18n="positions.international.eyebrow">International</span>
+            <h3 data-i18n="positions.international.title">Guest Conducting</h3>
+            <p data-i18n="positions.international.body">
               Collaborations include the Swedish Radio Choir, BBC Singers, Netherlands Chamber Choir, RIAS Kammerchor, Danish National Vocal Ensemble, professional choirs, orchestras, and festivals.
             </p>
           </article>
@@ -128,91 +132,91 @@
       </section>
 
       <section class="biography section-pad" id="biography" aria-labelledby="bio-title">
-        <div class="section-label">Biography</div>
+        <div class="section-label" data-i18n="section.biography">Biography</div>
         <div class="split-heading">
-          <h2 id="bio-title">A career built through education, ensemble craft, and international exchange.</h2>
-          <p>
+          <h2 id="bio-title" data-i18n="bio.title">A career built through education, ensemble craft, and international exchange.</h2>
+          <p data-i18n="bio.intro">
             The full biography can expand into a press-ready version, a long-form narrative, and a downloadable professional biography.
           </p>
         </div>
         <ol class="timeline">
           <li>
-            <span>Education</span>
-            <p>Conducting studies and advanced artistic training at the Norwegian Academy of Music.</p>
+            <span data-i18n="bio.education.title">Education</span>
+            <p data-i18n="bio.education.body">Conducting studies and advanced artistic training at the Norwegian Academy of Music.</p>
           </li>
           <li>
-            <span>Ensemble Leadership</span>
-            <p>Transformative artistic leadership with the Norwegian Soloists' Choir over three and a half decades.</p>
+            <span data-i18n="bio.ensemble.title">Ensemble Leadership</span>
+            <p data-i18n="bio.ensemble.body">Transformative artistic leadership with the Norwegian Soloists' Choir over three and a half decades.</p>
           </li>
           <li>
-            <span>International Touring</span>
-            <p>Performances, festivals, and guest conducting work with leading European professional ensembles.</p>
+            <span data-i18n="bio.touring.title">International Touring</span>
+            <p data-i18n="bio.touring.body">Performances, festivals, and guest conducting work with leading European professional ensembles.</p>
           </li>
           <li>
-            <span>Recordings & Awards</span>
-            <p>Critically acclaimed releases, international recording recognition, and distinguished cultural contributions.</p>
+            <span data-i18n="bio.recordings.title">Recordings & Awards</span>
+            <p data-i18n="bio.recordings.body">Critically acclaimed releases, international recording recognition, and distinguished cultural contributions.</p>
           </li>
         </ol>
       </section>
 
       <section class="repertoire section-pad" id="repertoire" aria-labelledby="repertoire-title">
         <div>
-          <div class="section-label">Repertoire</div>
-          <h2 id="repertoire-title">Music shaped by tradition, experiment, and the courage to commission.</h2>
+          <div class="section-label" data-i18n="section.repertoire">Repertoire</div>
+          <h2 id="repertoire-title" data-i18n="repertoire.title">Music shaped by tradition, experiment, and the courage to commission.</h2>
         </div>
-        <div class="tag-cloud" aria-label="Repertoire areas">
-          <span>Nordic Choral Music</span>
-          <span>Contemporary Music</span>
-          <span>Sacred Music</span>
-          <span>A Cappella</span>
-          <span>Symphonic Choral Repertoire</span>
-          <span>Commissioned Works</span>
-          <span>Experimental Vocal Music</span>
-          <span>Scandinavian Composers</span>
+        <div class="tag-cloud" aria-label="Repertoire areas" data-i18n-attr="aria-label:repertoireAreas">
+          <span data-i18n="repertoire.tag1">Nordic Choral Music</span>
+          <span data-i18n="repertoire.tag2">Contemporary Music</span>
+          <span data-i18n="repertoire.tag3">Sacred Music</span>
+          <span data-i18n="repertoire.tag4">A Cappella</span>
+          <span data-i18n="repertoire.tag5">Symphonic Choral Repertoire</span>
+          <span data-i18n="repertoire.tag6">Commissioned Works</span>
+          <span data-i18n="repertoire.tag7">Experimental Vocal Music</span>
+          <span data-i18n="repertoire.tag8">Scandinavian Composers</span>
         </div>
       </section>
 
       <section class="recordings section-pad" id="recordings" aria-labelledby="recordings-title">
         <div class="recording-copy">
-          <div class="section-label">Discography</div>
-          <h2 id="recordings-title">Recordings as living archives of sound, place, and artistic risk.</h2>
-          <p>
+          <div class="section-label" data-i18n="section.discography">Discography</div>
+          <h2 id="recordings-title" data-i18n="recordings.title">Recordings as living archives of sound, place, and artistic risk.</h2>
+          <p data-i18n="recordings.body">
             Extensive recording work with the Norwegian Soloists' Choir includes internationally released, critically acclaimed, and award-winning projects.
           </p>
         </div>
-        <div class="audio-stack" aria-label="Streaming placeholders">
+        <div class="audio-stack" aria-label="Streaming placeholders" data-i18n-attr="aria-label:streamingPlaceholders">
           <article>
             <div class="disc"></div>
             <div>
-              <h3>Selected Recordings</h3>
-              <p>Streaming embeds for Spotify, Apple Music, YouTube, or label pages.</p>
+              <h3 data-i18n="recordings.selected.title">Selected Recordings</h3>
+              <p data-i18n="recordings.selected.body">Streaming embeds for Spotify, Apple Music, YouTube, or label pages.</p>
             </div>
           </article>
           <article>
             <div class="disc pale"></div>
             <div>
-              <h3>Press Reviews</h3>
-              <p>Critical excerpts, awards, and recording notes.</p>
+              <h3 data-i18n="recordings.press.title">Press Reviews</h3>
+              <p data-i18n="recordings.press.body">Critical excerpts, awards, and recording notes.</p>
             </div>
           </article>
         </div>
       </section>
 
       <section class="media section-pad" id="media" aria-labelledby="media-title">
-        <div class="section-label">Media</div>
-        <h2 id="media-title">A professional press area for interviews, videos, reviews, and downloads.</h2>
+        <div class="section-label" data-i18n="section.media">Media</div>
+        <h2 id="media-title" data-i18n="media.title">A professional press area for interviews, videos, reviews, and downloads.</h2>
         <div class="media-grid">
-          <article><h3>Videos</h3><p>Concert excerpts, interviews, rehearsal footage, and festival appearances.</p></article>
-          <article><h3>Press Kit</h3><p>Short bio, long bio, portrait files, repertoire notes, and approved credits.</p></article>
-          <article><h3>Gallery</h3><p>Portraits, conducting, concerts, rehearsals, masterclasses, and recording sessions.</p></article>
+          <article><h3 data-i18n="media.videos.title">Videos</h3><p data-i18n="media.videos.body">Concert excerpts, interviews, rehearsal footage, and festival appearances.</p></article>
+          <article><h3 data-i18n="media.press.title">Press Kit</h3><p data-i18n="media.press.body">Short bio, long bio, portrait files, repertoire notes, and approved credits.</p></article>
+          <article><h3 data-i18n="media.gallery.title">Gallery</h3><p data-i18n="media.gallery.body">Portraits, conducting, concerts, rehearsals, masterclasses, and recording sessions.</p></article>
         </div>
       </section>
 
       <section class="masterclasses section-pad" id="masterclasses" aria-labelledby="masterclasses-title">
         <div class="masterclass-card">
-          <div class="section-label">Masterclasses</div>
-          <h2 id="masterclasses-title">For conductors, ensembles, festivals, and institutions.</h2>
-          <p>
+          <div class="section-label" data-i18n="section.masterclasses">Masterclasses</div>
+          <h2 id="masterclasses-title" data-i18n="masterclasses.title">For conductors, ensembles, festivals, and institutions.</h2>
+          <p data-i18n="masterclasses.body">
             Topics include choral sound, artistic interpretation, programming, Nordic repertoire, leadership, contemporary music, professional choir development, and young conductor mentorship.
           </p>
         </div>
@@ -220,43 +224,43 @@
 
       <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
         <div>
-          <div class="section-label">Contact</div>
-          <h2 id="contact-title">Professional enquiries</h2>
-          <p>
+          <div class="section-label" data-i18n="section.contact">Contact</div>
+          <h2 id="contact-title" data-i18n="contact.title">Professional enquiries</h2>
+          <p data-i18n="contact.body">
             Guest conducting, festivals, masterclasses, media requests, representation, and institutional collaborations.
           </p>
         </div>
-        <form class="contact-form" aria-label="Contact form">
+        <form class="contact-form" aria-label="Contact form" data-i18n-attr="aria-label:contactForm">
           <label>
-            <span>Name</span>
+            <span data-i18n="form.name">Name</span>
             <input type="text" name="name" autocomplete="name">
           </label>
           <label>
-            <span>Email</span>
+            <span data-i18n="form.email">Email</span>
             <input type="email" name="email" autocomplete="email">
           </label>
           <label>
-            <span>Enquiry Type</span>
+            <span data-i18n="form.type">Enquiry Type</span>
             <select name="type">
-              <option>Guest Conducting</option>
-              <option>Festival</option>
-              <option>Masterclass</option>
-              <option>Media</option>
-              <option>Representation</option>
+              <option data-i18n="form.guest">Guest Conducting</option>
+              <option data-i18n="form.festival">Festival</option>
+              <option data-i18n="form.masterclass">Masterclass</option>
+              <option data-i18n="form.media">Media</option>
+              <option data-i18n="form.representation">Representation</option>
             </select>
           </label>
           <label>
-            <span>Message</span>
+            <span data-i18n="form.message">Message</span>
             <textarea name="message" rows="5"></textarea>
           </label>
-          <button class="button primary" type="submit">Send Enquiry</button>
+          <button class="button primary" type="submit" data-i18n="form.submit">Send Enquiry</button>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>Grete Pedersen</p>
-      <p>Conductor · Artistic Director · Educator · Nordic Choral Music</p>
+      <p data-i18n="footer.roles">Conductor · Artistic Director · Educator · Nordic Choral Music</p>
     </footer>
 
     <script src="script.js"></script>
